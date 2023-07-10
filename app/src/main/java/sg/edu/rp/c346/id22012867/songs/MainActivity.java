@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     RatingBar rb;
     ArrayAdapter<Song> aaSongs;
     ArrayList<Song> songs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,18 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<String> data = db.getSongsContent();
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
-                db.close();
-                songs = new ArrayList<>();
-                updateSongList();
             }
         });
     }
-
-    private void updateSongList() {
-        DBHelper dbHelper = new DBHelper(MainActivity.this);
-        songs.clear();
-        songs.addAll(dbHelper.getSongs());
-        aaSongs.notifyDataSetChanged();
-    }
-
 }

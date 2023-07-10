@@ -15,7 +15,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/cookie"
         android:layout_gravity="center"
-        android:text="FIND THE SONG"
+        android:text="SONGIFY"
         android:textColor="@color/purple"
         android:textSize="50dp" />
 

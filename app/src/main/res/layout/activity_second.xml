@@ -7,10 +7,22 @@
     android:background="@drawable/spotifylayout"
     android:orientation="vertical"
     android:paddingLeft="35dp"
-    android:paddingTop="140dp"
+    android:paddingTop="100dp"
     android:paddingBottom="220dp"
     android:paddingRight="40dp"
     tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/btn5Stars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show all songs with 5 stars" />
+
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spnSongs"/>
 
     <ListView
         android:id="@+id/lvSongs"
