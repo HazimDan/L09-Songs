@@ -38,7 +38,7 @@ public class ThirdActivity extends AppCompatActivity {
         songID.setText("Song ID: " + data.get_id());
         etTitle.setText(data.getTitle());
         etSinger.setText(data.getSingers());
-        etYear.setText(data.getYear());
+        etYear.setText(String.valueOf(data.getYear()));
         etRB.setRating(data.getStars());
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,6 @@ public class ThirdActivity extends AppCompatActivity {
                 data.setYear(Integer.parseInt(etYear.getText().toString()));
                 data.setStars((int) etRB.getRating());
                 dbh.updateSong(data);
-                dbh.close();
                 finish();
             }
         });
