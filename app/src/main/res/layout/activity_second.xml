@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:paddingLeft="35dp"
     android:paddingTop="100dp"
-    android:paddingBottom="220dp"
+    android:paddingBottom="265dp"
     android:paddingRight="40dp"
     tools:context=".SecondActivity">
 
@@ -16,6 +16,7 @@
         android:id="@+id/btn5Stars"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="filterListView"
         android:text="show all songs with 5 stars" />
 
     <Spinner

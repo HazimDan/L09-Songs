@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VER = 1;
+    private static final int DATABASE_VER = 2;
     private static final String DATABASE_NAME = "songs.db";
     private static final String TABLE_SONG = "Song";
     private static final String COLUMN_ID = "_id";
@@ -95,6 +95,28 @@ public class DBHelper extends SQLiteOpenHelper {
         cursor.close();
         db.close();
         return songs;
+    }
+
+    public int updateSong(Song data) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_TITLE, data.getTitle());
+        values.put(COLUMN_SINGERS, data.getSingers());
+        values.put(COLUMN_YEAR, data.getYear());
+        values.put(COLUMN_STARS, data.getStars());
+        String condition = COLUMN_ID + "= ?";
+        String[] args = {String.valueOf(data.get_id())};
+        int result = db.update(TABLE_SONG, values, condition, args);
+        db.close();
+        return result;
+    }
+    public int deleteNote(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String condition = COLUMN_ID + "= ?";
+        String[] args = {String.valueOf(id)};
+        int result = db.delete(TABLE_SONG, condition, args);
+        db.close();
+        return result;
     }
 }
 
