@@ -1,4 +1,4 @@
-package sg.edu.rp.c346.id22012867.songs;
+package sg.edu.rp.c346.id22012867.NDPSongs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import sg.edu.rp.c346.id22012867.songs.R;
 
 public class ThirdActivity extends AppCompatActivity {
 

@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Songs"
         tools:targetApi="31">
         <activity
-            android:name=".ThirdActivity"
+            android:name="sg.edu.rp.c346.id22012867.NDPSongs.ThirdActivity"
             android:exported="false" />
         <activity
-            android:name=".SecondActivity"
+            android:name="sg.edu.rp.c346.id22012867.NDPSongs.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="sg.edu.rp.c346.id22012867.NDPSongs.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

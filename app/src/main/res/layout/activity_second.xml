@@ -10,7 +10,7 @@
     android:paddingTop="100dp"
     android:paddingBottom="265dp"
     android:paddingRight="40dp"
-    tools:context=".SecondActivity">
+    tools:context="sg.edu.rp.c346.id22012867.NDPSongs.SecondActivity">
 
     <Button
         android:id="@+id/btn5Stars"

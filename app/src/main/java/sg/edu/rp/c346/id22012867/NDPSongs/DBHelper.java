@@ -1,4 +1,4 @@
-package sg.edu.rp.c346.id22012867.songs;
+package sg.edu.rp.c346.id22012867.NDPSongs;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,10 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 

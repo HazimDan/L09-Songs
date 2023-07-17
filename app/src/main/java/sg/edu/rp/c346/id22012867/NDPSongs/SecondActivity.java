@@ -1,8 +1,7 @@
-package sg.edu.rp.c346.id22012867.songs;
+package sg.edu.rp.c346.id22012867.NDPSongs;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,9 +11,10 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
+
+import sg.edu.rp.c346.id22012867.songs.R;
 
 
 public class SecondActivity extends AppCompatActivity {

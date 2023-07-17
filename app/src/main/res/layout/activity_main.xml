@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/blue"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="sg.edu.rp.c346.id22012867.NDPSongs.MainActivity">
 
     <TextView
         android:id="@+id/title"

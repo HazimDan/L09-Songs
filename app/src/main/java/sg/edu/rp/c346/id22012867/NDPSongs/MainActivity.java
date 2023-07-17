@@ -1,4 +1,4 @@
-package sg.edu.rp.c346.id22012867.songs;
+package sg.edu.rp.c346.id22012867.NDPSongs;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.RatingBar;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
+
+import sg.edu.rp.c346.id22012867.songs.R;
 
 
 public class MainActivity extends AppCompatActivity {
