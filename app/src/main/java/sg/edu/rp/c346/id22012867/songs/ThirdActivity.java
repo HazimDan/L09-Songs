@@ -50,7 +50,8 @@ public class ThirdActivity extends AppCompatActivity {
                 data.setYear(Integer.parseInt(etYear.getText().toString()));
                 data.setStars((int) etRB.getRating());
                 dbh.updateSong(data);
-                finish();
+                Intent i = new Intent(ThirdActivity.this, SecondActivity.class);
+                startActivity(i);
             }
         });
         btnDelete.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +59,8 @@ public class ThirdActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DBHelper dbh = new DBHelper(ThirdActivity.this);
                 dbh.deleteNote(data.get_id());
-                finish();
+                Intent i = new Intent(ThirdActivity.this, SecondActivity.class);
+                startActivity(i);
 
             }
         });
